@@ -15,11 +15,11 @@ st.set_page_config(
 # Load Model and Encoders
 # --------------------------------------------------
 model = joblib.load(
-    r"C:\Users\Khande\Desktop\project 2\Customer-Churn-Prediction\models\random_forest_model.pkl"
+    model = joblib.load("models/random_forest_model.pkl")
 )
 
 label_encoders = joblib.load(
-    r"C:\Users\Khande\Desktop\project 2\Customer-Churn-Prediction\models\label_encoders.pkl"
+    label_encoders = joblib.load("models/label_encoders.pkl")
 )
 
 # --------------------------------------------------

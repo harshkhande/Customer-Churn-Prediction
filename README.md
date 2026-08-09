@@ -1,64 +1,162 @@
 # 📊 Customer Churn Prediction using Machine Learning
 
-## 📌 Project Overview
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-blue?logo=pandas)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit)
+![GitHub stars](https://img.shields.io/github/stars/harshkhande/Customer-Churn-Prediction?style=social)
+![GitHub forks](https://img.shields.io/github/forks/harshkhande/Customer-Churn-Prediction?style=social)
 
-Customer churn is one of the biggest challenges faced by telecom companies. This project predicts whether a customer is likely to leave (churn) based on their demographic information, services subscribed, contract type, billing information, and account history.
+<!-- Add after deployment -->
+<!--
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://customer-churn-prediction-harsh.streamlit.app)
+-->
 
-The project implements an end-to-end Machine Learning pipeline, from data preprocessing to deployment using Streamlit.
+<p align="center">
+<img src="screenshots/banner.png" width="100%">
+</p>
 
 ---
 
-## 🚀 Features
+# 📌 Project Overview
 
-- Data Cleaning and Preprocessing
+Customer churn is one of the biggest business challenges faced by telecom companies. Retaining an existing customer is significantly more cost-effective than acquiring a new one.
+
+This project develops an **End-to-End Machine Learning Pipeline** that predicts whether a telecom customer is likely to churn based on demographic information, subscribed services, contract details, and billing history.
+
+The project includes:
+
+- Data Cleaning
+- Data Preprocessing
 - Exploratory Data Analysis (EDA)
-- Feature Encoding using LabelEncoder
-- Machine Learning Model Training
+- Feature Engineering
+- Model Training
 - Model Evaluation
-- Customer Churn Prediction
 - Feature Importance Analysis
 - Interactive Streamlit Web Application
-- Churn Probability Prediction
-- Business Recommendations based on prediction
+- Business Recommendations
 
 ---
 
-## 📂 Project Structure
+# ✨ Key Features
 
-```text
-Customer-Churn-Prediction/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── data/
-│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│   └── customer_churn_preprocessed.csv
-│
-├── models/
-│   ├── random_forest_model.pkl
-│   ├── decision_tree_model.pkl
-│   ├── logistic_regression_model.pkl
-│   └── label_encoders.pkl
-│
-├── notebooks/
-│   ├── 1_Data_Loading.ipynb
-│   ├── 2_Preprocessing.ipynb
-│   ├── 3_Model_Training.ipynb
-│   ├── 4_Model_Evaluation.ipynb
-│   ├── 5_Customer_Churn_Prediction.ipynb
-│   └── 6_Feature_Importance.ipynb
-│
-├── results/
-│   └── feature_importance.csv
-│
-└── screenshots/
+✅ End-to-End Machine Learning Project
+
+✅ Interactive Streamlit Web Application
+
+✅ Customer Churn Probability Prediction
+
+✅ Feature Importance Analysis
+
+✅ Business Recommendation System
+
+✅ Model Comparison
+
+✅ Clean Project Structure
+
+---
+
+# 🔄 Project Workflow
+
+```mermaid
+graph LR
+
+A[Raw Dataset]
+-->B[Data Cleaning]
+
+B
+-->C[Preprocessing]
+
+C
+-->D[Model Training]
+
+D
+-->E[Model Evaluation]
+
+E
+-->F[Feature Importance]
+
+F
+-->G[Customer Prediction]
+
+G
+-->H[Streamlit Web App]
 ```
 
 ---
 
-## 🛠️ Technologies Used
+# 📂 Project Structure
+
+```text
+Customer-Churn-Prediction/
+
+│
+
+├── app.py
+
+├── README.md
+
+├── requirements.txt
+
+├── .gitignore
+
+│
+
+├── data/
+
+│ ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+
+│ ├── customer_churn_preprocessed.csv
+
+│ ├── customer_predictions.csv
+
+│ ├── model_comparison.csv
+
+│ └── model_evaluation.csv
+
+│
+
+├── models/
+
+│ ├── random_forest_model.pkl
+
+│ ├── logistic_regression_model.pkl
+
+│ ├── decision_tree_model.pkl
+
+│ └── label_encoders.pkl
+
+│
+
+├── notebooks/
+
+│ ├── 1_Data_Loading.ipynb
+
+│ ├── 2_Preprocessing.ipynb
+
+│ ├── 3_Model_Training.ipynb
+
+│ ├── 4_Model_Evaluation.ipynb
+
+│ ├── 5_Customer_Churn_Prediction.ipynb
+
+│ └── 6_Feature_Importance.ipynb
+
+│
+
+├── results/
+
+│ └── feature_importance.csv
+
+│
+
+└── screenshots/
+
+```
+
+---
+
+# 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -70,64 +168,131 @@ Customer-Churn-Prediction/
 
 ---
 
-## 📊 Machine Learning Models
+# 🤖 Machine Learning Models
 
-The following classification models were trained and evaluated:
+The following models were trained and evaluated:
 
 - Logistic Regression
 - Decision Tree Classifier
 - Random Forest Classifier
 
-### Best Performing Model
+## 🏆 Best Performing Model
 
 **Random Forest Classifier**
 
 ---
 
-## 📈 Important Features
+# 📊 Model Performance
 
-Top important features identified by the Random Forest model:
-
-1. TotalCharges
-2. MonthlyCharges
-3. tenure
-4. Contract
-5. PaymentMethod
+| Model | Accuracy |
+|--------|----------|
+| Logistic Regression | **79.0%** |
+| Decision Tree | **73.0%** |
+| Random Forest | **79.2% ✅** |
 
 ---
 
-## 🖥️ Streamlit Application
+# 📈 Top Important Features
 
-The web application allows users to:
+| Rank | Feature |
+|------|----------|
+| 1 | TotalCharges |
+| 2 | MonthlyCharges |
+| 3 | tenure |
+| 4 | Contract |
+| 5 | PaymentMethod |
 
-- Enter customer information
+---
+
+# 📈 Feature Importance
+
+<p align="center">
+
+<img src="screenshots/feature_importance.png" width="80%">
+
+</p>
+
+---
+
+# 📊 Confusion Matrix
+
+<p align="center">
+
+<img src="screenshots/confusion_matrix.png" width="70%">
+
+</p>
+
+---
+
+# 🖥 Streamlit Web Application
+
+The application allows users to:
+
+- Enter customer details
 - Predict customer churn
-- View churn probability
+- View probability of churn
 - View customer retention recommendations
+- Analyze prediction confidence
 
 ---
 
-## ▶️ Installation
+# 📸 Application Preview
 
-Clone the repository:
+## 🏠 Home Page
+
+<p align="center">
+<img src="screenshots/home_page.png" width="95%">
+</p>
+
+---
+
+## 📊 Prediction Result
+
+<p align="center">
+<img src="screenshots/prediction_result.png" width="95%">
+</p>
+
+---
+
+## 💡 Business Recommendation
+
+<p align="center">
+<img src="screenshots/business_recommendation.png" width="95%">
+</p>
+
+---
+
+# 📚 Dataset Information
+
+Dataset: **Telco Customer Churn Dataset**
+
+- Total Records: **7043**
+- Features: **19**
+- Target Variable: **Churn**
+
+---
+
+# ▶ Installation
+
+Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Customer-Churn-Prediction.git
+git clone https://github.com/harshkhande/Customer-Churn-Prediction.git
 ```
 
-Move into the project folder:
+Move into the project folder
 
 ```bash
 cd Customer-Churn-Prediction
 ```
 
-Install the required libraries:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+Run the application
 
 ```bash
 streamlit run app.py
@@ -135,51 +300,45 @@ streamlit run app.py
 
 ---
 
-## 📸 Application Preview
+# 🚀 Future Enhancements
 
-Add screenshots of your Streamlit application here.
-
-Example:
-
-- Home Page
-- Prediction Result
-- Business Recommendation
-
----
-
-## 📚 Dataset
-
-Dataset: Telco Customer Churn Dataset
-
-Number of Records: **7043**
-
-Features Used: **19**
-
-Target Variable: **Churn**
+- Hyperparameter Optimization
+- SHAP Explainable AI
+- XGBoost Implementation
+- REST API
+- Docker Deployment
+- Cloud Deployment
+- User Authentication
+- Real-time Prediction Dashboard
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Harshvardhan Khande**
+## Harshvardhan Khande
 
 Computer Engineering Student
 
-Machine Learning | Data Analytics | Artificial Intelligence
+Interested in:
+
+- Machine Learning
+- Artificial Intelligence
+- Data Analytics
+- Data Science
+
+📧 GitHub: https://github.com/harshkhande
 
 ---
 
-## ⭐ Future Improvements
+# ⭐ Support
 
-- Hyperparameter tuning
-- Model comparison dashboard
-- SHAP Explainable AI
-- Cloud deployment
-- REST API integration
-- Docker containerization
+If you found this project useful, please consider giving it a ⭐ on GitHub.
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is developed for educational and portfolio purposes.
+
+
+
